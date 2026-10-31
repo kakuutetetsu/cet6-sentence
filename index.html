@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111f25"><title>句序 · 六级翻译练习</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+<header class="masthead"><a class="brand" href="./"><span class="brand-icon">句</span>句序 <span class="brand-sub">CET–6 PRACTICE</span></a><span class="edition">长难句训练 · 16 题</span></header>
+<main>
+ <div class="progress-meta"><strong id="counter">正在载入题库…</strong><span id="completed">从主干出发，理顺每一句</span></div>
+ <progress id="progress" value="0" max="16" aria-label="完成进度"></progress>
+ <section class="exercise" aria-labelledby="heading">
+  <div class="intro"><div><p class="eyebrow">BUILD THE SENTENCE</p><h1 id="heading">把意思，排成句子。</h1></div><div class="modes" role="group" aria-label="训练难度"><button id="phraseMode" aria-pressed="true">A 短语拼句</button><button id="wordMode" aria-pressed="false">B 单词拼句</button></div></div>
+  <div class="source-line"><span id="topic"></span><span id="length"></span></div>
+  <div class="prompt"><span class="prompt-label">中文原句</span><p id="chinese"></p></div>
+  <div class="area-label"><label id="answerLabel">你的译文</label><span id="selectionCount">0 个词块</span></div>
+  <div id="answer" class="answer tiles" role="group" aria-labelledby="answerLabel"></div>
+  <div class="area-label"><span id="bankLabel">待选词块</span><span>点击添加 · 再次点击撤回</span></div>
+  <div id="bank" class="bank tiles" role="group" aria-labelledby="bankLabel"></div>
+  <p id="hint" class="hint" hidden></p>
+  <div class="actions"><button id="hintButton" class="secondary">提示</button><button id="reset" class="secondary">重置</button><button id="check" class="primary">检查答案</button><button id="next" class="secondary">下一题 <span aria-hidden="true">→</span></button></div>
+  <div class="under-actions"><span>按参考译文练习语序</span><button id="reveal" class="text-button">查看答案</button></div>
+  <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+  <section id="explanation" class="explanation" hidden><p class="eyebrow" id="resultLabel">参考译文</p><p id="reference" lang="en"></p><h2>记住这个语序</h2><p id="brief"></p><details><summary>展开详细解析</summary><div id="detail"></div></details></section>
+ </section>
+ <footer>六级翻译长难句语序解析 <span>·</span> 一次专注一句</footer>
+</main></body></html>
+
